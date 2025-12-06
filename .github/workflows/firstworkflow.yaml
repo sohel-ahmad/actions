@@ -4,8 +4,10 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Welcome message
-        run: echo "Hello, welcome to my first GitHub Actions workflow!"
+      - name: Bismillah message
+        run: echo "Bismillah hirrahman nirraheem, starting my first workflow"
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: list files
         run: ls -la
       - name: Read file
